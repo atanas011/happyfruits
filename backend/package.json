@@ -1,0 +1,15 @@
+{
+  "name": "happyfruits",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "dev": "set NODE_ENV=dev& node --env-file .env --watch server"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1"
+  }
+}

@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Abate Fetel",
+        "price": "10",
+        "description": "Green-red, large",
+        "ratings": 4.5,
+        "images": [
+            {
+                "public_id": "products/1",
+                "url": "https://res.cloudinary.com/1.jpg"
+            }
+        ],
+        "category": "Pear",
+        "seller": "SweetFruits",
+        "stock": 50,
+        "numOfReviews": 32,
+        "reviews": []
+    },
+    {
+        "name": "Ajdared",
+        "price": "8",
+        "description": "Red, medium",
+        "ratings": 4.0,
+        "images": [
+            {
+                "public_id": "products/2",
+                "url": "https://res.cloudinary.com/2.jpg"
+            }
+        ],
+        "category": "Apple",
+        "seller": "SweetFruits",
+        "stock": 70,
+        "numOfReviews": 22,
+        "reviews": []
+    },
+    {
+        "name": "Aženka",
+        "price": "9",
+        "description": "Purple, large",
+        "ratings": 4.8,
+        "images": [
+            {
+                "public_id": "products/3",
+                "url": "https://res.cloudinary.com/3.jpg"
+            }
+        ],
+        "category": "Plum",
+        "seller": "DeliciousFruits",
+        "stock": 30,
+        "numOfReviews": 42,
+        "reviews": []
+    }
+]

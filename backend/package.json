@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server",
     "dev": "set NODE_ENV=development& node --env-file .env --watch server",
+    "test": "set NODE_ENV=production& node --env-file .env --watch server",
     "seeder": "node --env-file .env utils/seeder"
   },
   "license": "ISC",

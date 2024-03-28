@@ -1,10 +1,7 @@
 import mongoose from 'mongoose'
 
 export const connectDB = async () => {
-    try {
-        await mongoose.connect(process.env.DB_URI)
-        console.log(`Connected to MongoDB database: ${mongoose.connection.name}`)
-    } catch (err) {
-        console.log(err)
-    }
+    await mongoose.connect(process.env.DB_URI)
+    console.log(`Connected to MongoDB database: ${mongoose.connection.name}`)
 }
+// w/o try-catch because server.js > unhandledRejection

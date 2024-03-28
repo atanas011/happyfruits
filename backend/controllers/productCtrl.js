@@ -1,11 +1,18 @@
 import Product from '../models/product.js'
+import { APIFeatures } from '../utils/apiFeatures.js'
 import { ErrorHandler } from '../utils/errorHandler.js'
 import catchAsyncErrors from '../middleware/catchAsyncErrors.js'
 
 export const getProducts = catchAsyncErrors(async (req, res) => {
-    const products = await Product.find()
+    const count = await Product.countDocuments()
+    const apiFeatures = new APIFeatures(Product.find(), req.query)
+        .search() // /products?keyword=...
+        .filter() // /products?keyword=...&category=...&price[gt]=8&price[lt]=10
+        .paginate(count / 2) // /products?page=...
+    const products = await apiFeatures.query
     res.status(200).json({
-        count: products.length,
+        tempCount: products.length,
+        count,
         products
     })
 })

@@ -2,6 +2,7 @@ import { Schema, model } from 'mongoose'
 import validator from 'validator'
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcryptjs'
+import crypto from 'crypto'
 
 const userSchema = new Schema({
     name: {
@@ -39,8 +40,8 @@ const userSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    resetPasswordToken: String,
-    resetPasswordTokenExpires: Date
+    resetPassToken: String,
+    resetPassTokenExpire: Date
 })
 
 // encrypt password while registering
@@ -57,6 +58,14 @@ userSchema.methods.comparePassword = async function (enteredPassword) {
 // generate JWT token
 userSchema.methods.getJwtToken = function () {
     return jwt.sign({ id: this._id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRE })
+}
+
+// generate password reset token
+userSchema.methods.getResetPwdToken = function () {
+    const resetToken = crypto.randomBytes(20).toString('hex')
+    this.resetPassToken = crypto.createHash('sha256').update(resetToken).digest('hex')
+    this.resetPassTokenExpire = Date.now() + 30 * 60 * 1000
+    return resetToken
 }
 
 export default model('User', userSchema)

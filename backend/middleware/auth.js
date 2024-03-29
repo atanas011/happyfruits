@@ -13,5 +13,5 @@ export const isAuthenticated = catchAsyncErrors(async (req, res, next) => {
 })
 
 export const authorizeRole = (req, res, next) => {
-    req.user.role === 'Admin' ? next() : next(new ErrorHandler('Access restricted', 403))
+    req.user.role === 'Admin' ? next() : next(new ErrorHandler('Access restricted', 403)) // return
 }

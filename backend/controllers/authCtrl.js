@@ -15,8 +15,6 @@ export const register = catchAsyncErrors(async (req, res) => {
         }
     })
     sendToken(user, 201, res)
-    // const token = user.getJwtToken()
-    // res.status(201).json({ token, user })
 })
 
 // login user and assign a token
@@ -28,6 +26,14 @@ export const login = catchAsyncErrors(async (req, res, next) => {
     const isMatch = await user.comparePassword(password)
     if (!isMatch) return next(new ErrorHandler('Invalid password', 401))
     sendToken(user, 200, res)
-    // const token = user.getJwtToken()
-    // res.status(200).json({ token })
+})
+
+// logout user and clear the cookie
+export const logout = catchAsyncErrors(async (req, res) => {
+    res.cookie('token', null, {
+        expires: new Date(Date.now()),
+        // secure: true,
+        httpOnly: true
+    })
+    res.status(200).json({ message: 'Logged out' })
 })

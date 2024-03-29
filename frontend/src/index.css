@@ -1,0 +1,108 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+html,
+body {
+    font-family: 'Amazon Ember', sans-serif;
+    background: khaki;
+    overflow-x: hidden;
+}
+
+/* ============================================== HEADER */
+header {
+    background: olive;
+    padding: .8rem;
+}
+
+#logo {
+    height: 2.5rem;
+}
+
+.input-group {
+    width: 90%;
+}
+
+#search-field {
+    height: 2.4rem;
+    padding: 1rem;
+}
+
+#search-btn {
+    background: gold;
+}
+
+#login-btn {
+    background-color: gold;
+    font-weight: 500;
+    padding: .4rem 1.5rem;
+}
+
+#cart-count {
+    background-color: gold;
+    padding: .2rem .5rem;
+    border-radius: .1rem;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+/* ============================================== FOOTER */
+footer {
+    background: olive;
+    text-align: center;
+    color: white;
+    padding-block: 1rem;
+}
+
+/* ================================================ CARD */
+.card-title a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: orange;
+}
+
+#ratings {
+    font-size: 1.2rem;
+    color: #fdcc0d;
+}
+
+.no-of-reviews {
+    font-size: .9rem;
+    color: grey;
+}
+
+.card-text {
+    font-size: 1.4rem;
+}
+
+#view-btn {
+    background-color: orange;
+    color: white;
+}
+
+/* ============================================= RATINGS */
+.rating-outer {
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    color: #fdcc0d;
+}
+
+.rating-outer::before {
+    content: '\f006 \f006 \f006 \f006 \f006';
+}
+
+.rating-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.rating-inner::before {
+    content: '\f005 \f005 \f005 \f005 \f005';
+    color: #f8ce0b;
+}

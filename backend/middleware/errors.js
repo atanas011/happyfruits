@@ -27,6 +27,22 @@ export default (err, req, res, next) => {
             error = new ErrorHandler(msg, 400)
         }
 
+        // handles duplicate key error (e.g. registration with same email)
+        if (err.code === 11000) {
+            const msg = `Duplicate ${Object.keys(err.keyValue)} entered`
+            error = new ErrorHandler(msg, 409)
+        }
+
+        if (err.name === 'JsonWebTokenError') {
+            const msg = 'Invalid token'
+            error = new ErrorHandler(msg, 401)
+        }
+
+        if (err.name === 'TokenExpiredError') {
+            const msg = 'Session has expired'
+            error = new ErrorHandler(msg, 401)
+        }
+
         res.status(error.statusCode).json({ message: error.message || 'Internal Server Error' })
     }
 }

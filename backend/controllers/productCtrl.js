@@ -6,9 +6,9 @@ import catchAsyncErrors from '../middleware/catchAsyncErrors.js'
 export const getProducts = catchAsyncErrors(async (req, res) => {
     const count = await Product.countDocuments()
     const apiFeatures = new APIFeatures(Product.find(), req.query)
-        .search() // /products?keyword=...
-        .filter() // /products?keyword=...&category=...&price[gt]=8&price[lt]=10
-        .paginate(count / 2) // /products?page=...
+        .search()
+        .filter()
+        .paginate(count)
     const products = await apiFeatures.query
     res.status(200).json({
         tempCount: products.length,

@@ -3,19 +3,19 @@ import { Schema, model } from 'mongoose'
 const productSchema = new Schema({
     name: {
         type: String,
-        required: [true, 'Please enter product name'],
+        required: [true, 'Please provide product name'],
         maxLength: [100, 'Product name cannot exceed 100 characters'],
         trim: true
     },
     price: {
         type: Number,
-        required: [true, 'Please enter product price'],
+        required: [true, 'Please provide product price'],
         maxLength: [5, 'Product price cannot exceed 5 characters'],
         default: 0.0
     },
     description: {
         type: String,
-        required: [true, 'Please enter product description'],
+        required: [true, 'Please provide product description'],
     },
     ratings: {
         type: Number,
@@ -49,11 +49,11 @@ const productSchema = new Schema({
     },
     seller: {
         type: String,
-        required: [true, 'Please enter product seller'],
+        required: [true, 'Please provide product seller'],
     },
     stock: {
         type: Number,
-        required: [true, 'Please enter product stock'],
+        required: [true, 'Please provide product stock'],
         maxLength: [5, 'Product stock cannot exceed 5 characters'],
         default: 0
     },

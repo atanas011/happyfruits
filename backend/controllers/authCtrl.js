@@ -108,6 +108,7 @@ export const resetPassword = catchAsyncErrors(async (req, res, next) => {
 })
 
 // ADMIN ROUTES ===============================================================
+
 export const getUsers = catchAsyncErrors(async (req, res) => {
     const users = await User.find()
     res.status(200).json({

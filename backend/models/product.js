@@ -63,6 +63,11 @@ const productSchema = new Schema({
     },
     reviews: [
         {
+            user: {
+                type: Schema.ObjectId,
+                required: true,
+                ref: 'User'
+            },
             name: {
                 type: String,
                 required: true

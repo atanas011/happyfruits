@@ -5,7 +5,10 @@ import {
     addProduct,
     getProduct,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    createReview,
+    getReviews,
+    deleteReview
 } from '../controllers/productCtrl.js'
 import { isAuthenticated, authorizeRole } from '../middleware/auth.js'
 
@@ -16,3 +19,7 @@ productRouter.get('/product/:id', getProduct)
 productRouter.post('/admin/product/new', isAuthenticated, authorizeRole, addProduct)
 productRouter.put('/admin/product/:id', isAuthenticated, authorizeRole, updateProduct)
 productRouter.delete('/admin/product/:id', isAuthenticated, authorizeRole, deleteProduct)
+
+productRouter.put('/review', isAuthenticated, createReview)
+productRouter.get('/reviews', isAuthenticated, getReviews)
+productRouter.delete('/reviews', isAuthenticated, deleteReview)

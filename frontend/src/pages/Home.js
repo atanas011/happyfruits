@@ -1,21 +1,33 @@
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react'
+
+import ProductCard from '../components/ProductCard'
+import { getProducts } from '../actions/product'
 import MetaData from '../components/MetaData'
-import Card from '../components/Card'
 
 const Home = () => {
-    return (
-        <>
-            {/* add custom title */}
-            <MetaData title={'Buy Fruit Plants Online at Lowest Price'} />
 
-            <div className='container-fluid min-vh-100 py-4'>
-                <h1 className='mb-0'>Happy Fruits</h1>
+    const dispatch = useDispatch()
+
+    const { loading, products } = useSelector(state => state.products)
+
+    useEffect(() => {
+        dispatch(getProducts())
+    }, [dispatch])
+
+    return (
+        <div className='container-fluid min-vh-100 py-4'>
+            <MetaData title={'Buy Fruit Plants Online at Lowest Price'} />
+            <h1 className='mb-0'>Happy Fruits</h1>
+
+            {loading ? <h1 className='pt-3'>Loading...</h1> :
                 <div className='row'>
-                    {[1, 2, 3, 4, 5, 6, 7, 8].map(i =>
-                        <Card key={i} />
+                    {products && products.map(product =>
+                        <ProductCard key={product._id} product={product} />
                     )}
                 </div>
-            </div>
-        </>
+            }
+        </div>
     )
 }
 

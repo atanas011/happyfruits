@@ -6,15 +6,16 @@
         "ratings": 4.5,
         "images": [
             {
-                "public_id": "products/1",
-                "url": "https://res.cloudinary.com/1.jpg"
+                "public_id": "products/abate_fetel_fpqgzq",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131890/happyfruits/products/abate_fetel_fpqgzq.jpg"
             }
         ],
         "category": "Pear",
         "seller": "SweetFruits",
         "stock": 50,
         "numOfReviews": 32,
-        "reviews": []
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     },
     {
         "name": "Ajdared",
@@ -23,116 +24,123 @@
         "ratings": 4.0,
         "images": [
             {
-                "public_id": "products/2",
-                "url": "https://res.cloudinary.com/2.jpg"
+                "public_id": "products/ajdared_xvdns4",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131890/happyfruits/products/ajdared_xvdns4.jpg"
             }
         ],
         "category": "Apple",
         "seller": "SweetFruits",
         "stock": 70,
         "numOfReviews": 22,
-        "reviews": []
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     },
     {
         "name": "Aženka",
         "price": "9",
         "description": "Purple, large",
-        "ratings": 4.8,
+        "ratings": 3.5,
         "images": [
             {
-                "public_id": "products/3",
-                "url": "https://res.cloudinary.com/3.jpg"
+                "public_id": "products/azenka_rasmxe",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131890/happyfruits/products/azenka_rasmxe.jpg"
             }
         ],
         "category": "Plum",
         "seller": "DeliciousFruits",
         "stock": 30,
         "numOfReviews": 42,
-        "reviews": []
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     },
     {
         "name": "Bergeron",
         "price": "10",
         "description": "Orange, medium",
-        "ratings": 4.9,
+        "ratings": 3.0,
         "images": [
             {
-                "public_id": "products/4",
-                "url": "https://res.cloudinary.com/4.jpg"
+                "public_id": "products/bergeron_xyprul",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131890/happyfruits/products/bergeron_xyprul.jpg"
             }
         ],
         "category": "Apricot",
         "seller": "DeliciousFruits",
         "stock": 130,
         "numOfReviews": 52,
-        "reviews": []
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     },
     {
         "name": "Breburn",
         "price": "9",
         "description": "Red-green, medium",
-        "ratings": 4.9,
+        "ratings": 2.5,
         "images": [
             {
-                "public_id": "products/5",
-                "url": "https://res.cloudinary.com/5.jpg"
+                "public_id": "products/breburn_cklb25",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131890/happyfruits/products/breburn_cklb25.jpg"
             }
         ],
         "category": "Apple",
         "seller": "DeliciousFruits",
         "stock": 80,
         "numOfReviews": 41,
-        "reviews": []
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     },
     {
         "name": "Budimka",
         "price": "8",
         "description": "Red, large",
-        "ratings": 4.7,
+        "ratings": 2.0,
         "images": [
             {
-                "public_id": "products/6",
-                "url": "https://res.cloudinary.com/6.jpg"
+                "public_id": "products/budimka_vbbb4l",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131890/happyfruits/products/budimka_vbbb4l.jpg"
             }
         ],
         "category": "Apple",
         "seller": "DeliciousFruits",
         "stock": 40,
         "numOfReviews": 32,
-        "reviews": []
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     },
     {
         "name": "Butira",
         "price": "10",
         "description": "Green-red, medium",
-        "ratings": 4.7,
+        "ratings": 1.5,
         "images": [
             {
-                "public_id": "products/7",
-                "url": "https://res.cloudinary.com/7.jpg"
+                "public_id": "products/butira_cxhgoq",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/butira_cxhgoq.jpg"
             }
         ],
         "category": "Pear",
         "seller": "DeliciousFruits",
         "stock": 90,
         "numOfReviews": 12,
-        "reviews": []
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     },
     {
         "name": "Čačanska rana",
         "price": "9",
         "description": "Purple, medium",
-        "ratings": 4.9,
+        "ratings": 1.0,
         "images": [
             {
-                "public_id": "products/8",
-                "url": "https://res.cloudinary.com/8.jpg"
+                "public_id": "products/cacanska_rana_nvakdx",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/cacanska_rana_nvakdx.jpg"
             }
         ],
         "category": "Plum",
         "seller": "DeliciousFruits",
         "stock": 120,
         "numOfReviews": 52,
-        "reviews": []
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     }
 ]

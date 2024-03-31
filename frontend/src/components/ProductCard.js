@@ -1,23 +1,19 @@
-const Card = () => {
+const ProductCard = ({ product }) => {
     return (
         <div className='col-sm-12 col-md-6 col-lg-3 mt-4'>
             <div className='card'>
-                <img
-                    src='https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131890/happyfruits/products/abate_fetel_fpqgzq.jpg'
-                    className='card-img-top'
-                    alt='abate_fetel'
-                />
+                <img className='card-img-top' src={product.images[0].url} alt={product.name} />
                 <div className='card-body d-flex flex-column'>
                     <h5 className='card-title'>
-                        <a href='/#'>Abate Fetel</a>
+                        <a href='/#'>{product.name}</a>
                     </h5>
                     <div id='ratings'>
                         <div className='rating-outer me-2'>
-                            <div className='rating-inner'></div>
+                            <div className='rating-inner' style={{ width: `${product.ratings / 5 * 100}%` }}></div>
                         </div>
-                        <span className='no-of-reviews text-nowrap'>(0 Reviews)</span>
+                        <span className='no-of-reviews text-nowrap'>({product.numOfReviews} Reviews)</span>
                     </div>
-                    <p className='card-text'>5.00€</p>
+                    <p className='card-text'>{product.price}€</p>
                     <a className='btn btn-block' id='view-btn' href='/#'>View Details</a>
                 </div>
             </div>
@@ -25,4 +21,4 @@ const Card = () => {
     )
 }
 
-export default Card
+export default ProductCard

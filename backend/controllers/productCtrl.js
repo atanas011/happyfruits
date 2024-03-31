@@ -3,7 +3,8 @@ import { APIFeatures } from '../utils/apiFeatures.js'
 import { ErrorHandler } from '../utils/errorHandler.js'
 import catchAsyncErrors from '../middleware/catchAsyncErrors.js'
 
-export const getProducts = catchAsyncErrors(async (req, res) => {
+export const getProducts = catchAsyncErrors(async (req, res) => { // , next
+    // return next(new ErrorHandler('Test Error', 400)) // to test notification
     const count = await Product.countDocuments()
     const apiFeatures = new APIFeatures(Product.find(), req.query)
         .search()

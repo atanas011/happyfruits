@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom'
+
 const Header = () => {
     return (
         <header className='row'>
             <div className='col-12 col-md-3'>
-                <img id='logo' src='/favicon.ico' alt='logo' />
+                <Link to='/'>
+                    <img id='logo' src='/favicon.ico' alt='logo' title='Home' />
+                </Link>
             </div>
 
             <div className='col-12 col-md-6 mt-2 mt-md-0'>

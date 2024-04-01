@@ -70,6 +70,7 @@ footer {
 .no-of-reviews {
     font-size: .9rem;
     color: grey;
+    text-wrap: nowrap;
 }
 
 .card-text {
@@ -126,4 +127,58 @@ footer {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* ================================ PRODUCT DETAILS */
+#product-price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.count {
+    width: 50px !important;
+    padding: 6px 0 7px 6px;
+}
+
+#cart-btn,
+.review-btn {
+    border-radius: 2rem;
+    background-color: #fa9c23;
+    color: white;
+    border: none;
+    padding: .5rem 2rem;
+}
+
+.stock-status {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: .3rem;
+}
+
+.greenColor {
+    color: green;
+}
+
+.redColor {
+    color: red;
+}
+
+/* ======================================= REVIEW MODAL */
+.stars {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.star {
+    display: inline;
+    list-style: none;
+    font-size: 3rem;
+    padding-left: .9rem;
+    color: #e3e3e3;
+}
+
+.star:first-child {
+    padding-left: 0;
 }

@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
                         <div className='rating-outer me-2'>
                             <div className='rating-inner' style={{ width: `${product.ratings / 5 * 100}%` }}></div>
                         </div>
-                        <span className='no-of-reviews text-nowrap'>({product.numOfReviews} Reviews)</span>
+                        <span className='no-of-reviews'>({product.numOfReviews} Reviews)</span>
                     </div>
                     <p className='card-text'>{product.price}€</p>
                     <Link to={details} className='btn btn-block' id='view-btn'>View Details</Link>

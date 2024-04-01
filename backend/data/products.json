@@ -2,12 +2,20 @@
     {
         "name": "Abate Fetel",
         "price": "10",
-        "description": "Green-red, large",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "ratings": 4.5,
         "images": [
             {
                 "public_id": "products/abate_fetel_fpqgzq",
                 "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131890/happyfruits/products/abate_fetel_fpqgzq.jpg"
+            },
+            {
+                "public_id": "products/abate_fetel_uvv6cy",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1710943093/happyfruits/products/abate_fetel_uvv6cy.jpg"
+            },
+            {
+                "public_id": "products/abate_fetel_bpuiep",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1710943100/happyfruits/products/abate_fetel_bpuiep.png"
             }
         ],
         "category": "Pear",
@@ -20,7 +28,7 @@
     {
         "name": "Ajdared",
         "price": "8",
-        "description": "Red, medium",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "ratings": 4.0,
         "images": [
             {
@@ -30,7 +38,7 @@
         ],
         "category": "Apple",
         "seller": "SweetFruits",
-        "stock": 70,
+        "stock": 0,
         "numOfReviews": 22,
         "reviews": [],
         "user": "658853a70e3ffa3777c8ae4c"
@@ -38,7 +46,7 @@
     {
         "name": "Aženka",
         "price": "9",
-        "description": "Purple, large",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "ratings": 3.5,
         "images": [
             {
@@ -56,7 +64,7 @@
     {
         "name": "Bergeron",
         "price": "10",
-        "description": "Orange, medium",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "ratings": 3.0,
         "images": [
             {
@@ -74,7 +82,7 @@
     {
         "name": "Breburn",
         "price": "9",
-        "description": "Red-green, medium",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "ratings": 2.5,
         "images": [
             {
@@ -92,7 +100,7 @@
     {
         "name": "Budimka",
         "price": "8",
-        "description": "Red, large",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "ratings": 2.0,
         "images": [
             {
@@ -110,7 +118,7 @@
     {
         "name": "Butira",
         "price": "10",
-        "description": "Green-red, medium",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "ratings": 1.5,
         "images": [
             {
@@ -128,7 +136,7 @@
     {
         "name": "Čačanska rana",
         "price": "9",
-        "description": "Purple, medium",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "ratings": 1.0,
         "images": [
             {

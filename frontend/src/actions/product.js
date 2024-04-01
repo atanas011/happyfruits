@@ -10,6 +10,16 @@ export const getProducts = () => async dispatch => {
     }
 }
 
+export const getProductDetails = id => async dispatch => {
+    try {
+        dispatch({ type: 'product_details_req' })
+        const { data } = await axios.get(`/api/product/${id}`)
+        dispatch({ type: 'product_details_success', payload: data })
+    } catch (err) {
+        dispatch({ type: 'product_details_fail', payload: err.response.data.message })
+    }
+}
+
 export const clearErrors = () => async dispatch => {
     dispatch({ type: 'clear_errors' })
 }

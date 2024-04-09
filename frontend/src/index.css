@@ -31,13 +31,13 @@ header {
 }
 
 #login-btn {
-    background-color: gold;
+    background: gold;
     font-weight: 500;
     padding: .4rem 1.5rem;
 }
 
 #cart-count {
-    background-color: gold;
+    background: gold;
     padding: .2rem .5rem;
     border-radius: .1rem;
     font-weight: bold;
@@ -78,7 +78,7 @@ footer {
 }
 
 #view-btn {
-    background-color: orange;
+    background: orange;
     color: white;
 }
 
@@ -143,7 +143,7 @@ footer {
 #cart-btn,
 .review-btn {
     border-radius: 2rem;
-    background-color: #fa9c23;
+    background: #fa9c23;
     color: white;
     border: none;
     padding: .5rem 2rem;
@@ -181,4 +181,14 @@ footer {
 
 .star:first-child {
     padding-left: 0;
+}
+
+/* ========================================== PAGINATION */
+.page-item.active .page-link {
+    background: orange;
+    border-color: orange;
+}
+
+.page-link {
+    color: orange;
 }

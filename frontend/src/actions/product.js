@@ -1,9 +1,26 @@
 import axios from 'axios'
 
-export const getProducts = () => async dispatch => {
+export const getProducts = (currentPage = 1, keyword = '', price, category, rating = 0) => async dispatch => {
     try {
         dispatch({ type: 'products_req' })
-        const { data } = await axios.get('/api/products')
+        let queryStr = `
+            /api/products?keyword=${keyword
+            }&page=${currentPage
+            }&price[gt]=${price[0]}&price[lt]=${price[1]
+            }&ratings[gte]=${rating}
+        ` // ratings from products.json
+        // gte (greather than or equals, >=), gt (greather than, >)
+
+        if (category) {
+            queryStr = `
+                /api/products?keyword=${keyword
+                }&page=${currentPage
+                }&price[gt]=${price[0]}&price[lt]=${price[1]
+                }&category=${category
+                }&ratings[gte]=${rating}
+            `
+        }
+        const { data } = await axios.get(queryStr)
         dispatch({ type: 'products_success', payload: data })
     } catch (err) {
         dispatch({ type: 'products_fail', payload: err.response.data.message })

@@ -9,8 +9,6 @@ import ReviewModal from '../components/ReviewModal'
 import MetaData from '../components/MetaData'
 import Loader from '../components/Loader'
 
-// import store from '../store'
-
 const ProductDetails = () => {
 
     const { id } = useParams()
@@ -19,7 +17,6 @@ const ProductDetails = () => {
     const { loading, product, error } = useSelector(state => state.productDetails)
 
     useEffect(() => {
-        // console.log(store.getState())
         if (error) {
             toast.error(error)
             return () => dispatch(clearErrors())

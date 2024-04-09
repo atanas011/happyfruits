@@ -150,5 +150,149 @@
         "numOfReviews": 52,
         "reviews": [],
         "user": "658853a70e3ffa3777c8ae4c"
+    },
+    {
+        "name": "Crveni delišes",
+        "price": "8",
+        "description": "Red, medium",
+        "ratings": 4.6,
+        "images": [
+            {
+                "public_id": "products/crveni_delises_qwgxjp",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/crveni_delises_qwgxjp.jpg"
+            }
+        ],
+        "category": "Apple",
+        "seller": "DeliciousFruits",
+        "stock": 20,
+        "numOfReviews": 2,
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
+    },
+    {
+        "name": "Junska lepotica",
+        "price": "7",
+        "description": "Yellow, small",
+        "ratings": 5.0,
+        "images": [
+            {
+                "public_id": "products/junska_lepotica_ococv0",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/junska_lepotica_ococv0.jpg"
+            }
+        ],
+        "category": "Pear",
+        "seller": "DeliciousFruits",
+        "stock": 10,
+        "numOfReviews": 20,
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
+    },
+    {
+        "name": "Krimska žuta",
+        "price": "6",
+        "description": "Yellow, small",
+        "ratings": 4.0,
+        "images": [
+            {
+                "public_id": "products/krimska_zuta_odqevn",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/krimska_zuta_odqevn.jpg"
+            }
+        ],
+        "category": "Plum",
+        "seller": "DeliciousFruits",
+        "stock": 0,
+        "numOfReviews": 10,
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
+    },
+    {
+        "name": "Lubeničarka",
+        "price": "8",
+        "description": "Yellow, small",
+        "ratings": 3.0,
+        "images": [
+            {
+                "public_id": "products/lubenicarka_e7hvde",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/lubenicarka_e7hvde.jpg"
+            }
+        ],
+        "category": "Pear",
+        "seller": "DeliciousFruits",
+        "stock": 50,
+        "numOfReviews": 10,
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
+    },
+    {
+        "name": "Novosadska rodna",
+        "price": "8",
+        "description": "Yellow-red, medium",
+        "ratings": 4.5,
+        "images": [
+            {
+                "public_id": "products/novosadska_rodna_ozjtqf",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/novosadska_rodna_ozjtqf.jpg"
+            }
+        ],
+        "category": "Apricot",
+        "seller": "DeliciousFruits",
+        "stock": 50,
+        "numOfReviews": 10,
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
+    },
+    {
+        "name": "Rasna",
+        "price": "9",
+        "description": "Brown, medium",
+        "ratings": 4.5,
+        "images": [
+            {
+                "public_id": "products/rasna_egsofz",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/rasna_egsofz.jpg"
+            }
+        ],
+        "category": "Walnut",
+        "seller": "DeliciousFruits",
+        "stock": 50,
+        "numOfReviews": 10,
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
+    },
+    {
+        "name": "Šampion",
+        "price": "9",
+        "description": "Brown, large",
+        "ratings": 4.5,
+        "images": [
+            {
+                "public_id": "products/sampion_pdx1ij",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/sampion_pdx1ij.jpg"
+            }
+        ],
+        "category": "Walnut",
+        "seller": "DeliciousFruits",
+        "stock": 50,
+        "numOfReviews": 10,
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
+    },
+    {
+        "name": "Stenlej",
+        "price": "12",
+        "description": "Purple, large",
+        "ratings": 4.8,
+        "images": [
+            {
+                "public_id": "products/stenlej_s8evay",
+                "url": "https://res.cloudinary.com/dpv5tcps3/image/upload/v1683131891/happyfruits/products/stenlej_s8evay.jpg"
+            }
+        ],
+        "category": "Plum",
+        "seller": "DeliciousFruits",
+        "stock": 50,
+        "numOfReviews": 10,
+        "reviews": [],
+        "user": "658853a70e3ffa3777c8ae4c"
     }
 ]

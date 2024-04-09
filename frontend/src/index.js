@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'
 import React from 'react'
 
-import { getProducts } from './actions/product'
+// import { getProducts } from './actions/product'
 import store from './store'
 import App from './App'
 import './index.css'
@@ -16,13 +16,13 @@ const options = {
   theme: 'dark'
 }
 
-store.dispatch(getProducts())
+// store.dispatch(getProducts())
 
 createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Provider store={store}>
       <ToastContainer {...options} />
       <App />
     </Provider>
-  </React.StrictMode>
+  // </React.StrictMode>
 )

@@ -1,19 +1,26 @@
-import Product from '../models/product.js'
-import { APIFeatures } from '../utils/apiFeatures.js'
-import { ErrorHandler } from '../utils/errorHandler.js'
 import catchAsyncErrors from '../middleware/catchAsyncErrors.js'
+import { ErrorHandler } from '../utils/errorHandler.js'
+import { APIFeatures } from '../utils/apiFeatures.js'
+import Product from '../models/product.js'
 
 export const getProducts = catchAsyncErrors(async (req, res) => {
     const count = await Product.countDocuments()
     const apiFeatures = new APIFeatures(Product.find(), req.query)
         .search()
         .filter()
-        .paginate(count)
-    const products = await apiFeatures.query
+    const resPerPage = 8
+
+    // removes empty pages for filtered products
+    let products = await apiFeatures.query
+    let tempCount = products.length
+    apiFeatures.paginate(resPerPage)
+    products = await apiFeatures.query.clone()
+
     res.status(200).json({
-        tempCount: products.length,
+        products,
         count,
-        products
+        resPerPage,
+        tempCount
     })
 })
 

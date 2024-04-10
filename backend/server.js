@@ -1,3 +1,5 @@
+import cloudinary from 'cloudinary'
+
 import { app } from './app.js'
 import { connectDB } from './db.js'
 
@@ -12,6 +14,13 @@ process.on('uncaughtException', err => {
 // console.log(a)
 
 connectDB()
+
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+
+})
 
 const server = app.listen(PORT, console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV} mode`))
 

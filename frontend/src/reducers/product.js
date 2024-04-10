@@ -2,7 +2,6 @@ export const productsReducer = (state = { products: [] }, action) => {
     switch (action.type) {
         case 'products_req':
             return {
-                // ...state,
                 loading: true
             }
         case 'products_success':

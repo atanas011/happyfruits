@@ -28,6 +28,7 @@ const Home = () => {
             return
         }
         dispatch(getProducts(currentPage, keyword, price, category, rating))
+        window.scrollTo(0, 0)
     }, [dispatch, error, currentPage, keyword, price, category, rating])
 
     // removes empty pages for filtered products

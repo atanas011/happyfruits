@@ -36,12 +36,17 @@ header {
     padding: .4rem 1.5rem;
 }
 
+#dropdownMenuButton {
+    border-color: olive;
+}
+
 #cart-count {
     background: gold;
     padding: .2rem .5rem;
     border-radius: .1rem;
     font-weight: bold;
     font-size: .9rem;
+    color: #2e2e2e;
 }
 
 /* ============================================== FOOTER */
@@ -135,8 +140,8 @@ footer {
     font-weight: bold;
 }
 
-.count {
-    width: 50px !important;
+#count {
+    width: 50px;
     padding: 6px 0 7px 6px;
 }
 
@@ -191,4 +196,53 @@ footer {
 
 .page-link {
     color: orange;
+}
+
+/* ==================================== LOGIN & REGISTER */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+}
+
+.wrapper form {
+    padding: 1.5rem 2.5rem 3.5rem;
+    background: whitesmoke;
+}
+
+.wrapper form .btn {
+    background: orange;
+    border-color: orange;
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.wrapper form a {
+    font-size: .9rem;
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+/* ============================================== AVATAR */
+.avatar {
+    display: inline-block;
+    margin-bottom: 0;
+    height: 3rem;
+    width: 3rem;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-header {
+    margin-right: .6rem;
+    height: 2.2rem;
+    width: 2.2rem;
 }

@@ -1,3 +1,4 @@
+import cloudinary from 'cloudinary'
 import crypto from 'crypto'
 
 import catchAsyncErrors from '../middleware/catchAsyncErrors.js'
@@ -6,15 +7,24 @@ import { sendEmail } from '../utils/sendEmail.js'
 import { sendToken } from '../utils/jwtToken.js'
 import User from '../models/user.js'
 
-export const register = catchAsyncErrors(async (req, res) => {
+export const register = catchAsyncErrors(async (req, res, next) => {
     const { name, email, password } = req.body
+    if (!name) return next(new ErrorHandler('Please provide name', 400))
+    if (!email) return next(new ErrorHandler('Please provide email', 400))
+    if (!password) return next(new ErrorHandler('Please provide password', 400))
+    if (!req.body.avatar) return next(new ErrorHandler('Please provide avatar', 400))
+    const avatar = await cloudinary.v2.uploader.upload(req.body.avatar, {
+        folder: 'happyfruits/avatars',
+        width: 150,
+        crop: 'scale'
+    })
     const user = await User.create({
         name,
         email,
         password,
         avatar: {
-            public_id: 'avatars/',
-            url: 'https://res.cloudinary.com/.jpg'
+            public_id: avatar.public_id,
+            url: avatar.secure_url
         }
     })
     sendToken(user, 201, res)

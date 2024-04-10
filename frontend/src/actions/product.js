@@ -8,8 +8,7 @@ export const getProducts = (currentPage = 1, keyword = '', price, category, rati
             }&page=${currentPage
             }&price[gt]=${price[0]}&price[lt]=${price[1]
             }&ratings[gte]=${rating}
-        ` // ratings from products.json
-        // gte (greather than or equals, >=), gt (greather than, >)
+        `
 
         if (category) {
             queryStr = `

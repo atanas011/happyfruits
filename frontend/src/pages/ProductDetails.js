@@ -57,7 +57,7 @@ const ProductDetails = () => {
                             <p id='product-price'>{product.price}€</p>
                             <div className='input-group d-inline text-nowrap'>
                                 <span className='btn btn-danger minus'>-</span>
-                                <input type='number' className='form-control count d-inline' value='1' readOnly />
+                                <input type='number' id='count' className='form-control d-inline' value='1' readOnly />
                                 <span className='btn btn-primary plus me-3'>+</span>
                             </div>
                             <button className='mt-2 mt-md-0' type='button' id='cart-btn'>Add to Cart</button>
